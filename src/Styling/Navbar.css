@@ -1,11 +1,8 @@
-.active{
-    border-bottom: 0.5px solid #fff;
-}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
+    background-color: #000;
 }
 
 nav .title{
@@ -25,15 +22,33 @@ nav ul li{
 }
 
 nav ul li a{
-    display: block;
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0 1rem;
     font-size: 1.5rem;
     border-radius: 0.5rem;
 }
 
-nav ul li a:hover{
-    color: #1d4ed8;
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.25s ease-out;
 }
+nav ul li a:hover::before{
+    width: 70%;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+
+}
+

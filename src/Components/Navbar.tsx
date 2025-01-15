@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <nav>
         <Link to="/" className="title">
-          Website
+          Shrikar Sirobhushanam
         </Link>
         <ul>
           <li>
@@ -17,6 +17,9 @@ function Navbar() {
           </li>
           <li>
             <NavLink to="/Skills">Skills</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Projects">Projects</NavLink>
           </li>
           <li>
             <NavLink to="/Contact">Contact</NavLink>
