@@ -1,0 +1,68 @@
+.experienceContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.experienceContainer .title{
+    font-size: 2.5rem;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    outline: 2.5px solid #d3d3d3;
+    border-radius: 10px;
+    transform: outline 0.6s linear;
+    margin: 0.5em;
+}
+
+/* border animation */
+.cards .card:hover{
+    outline-width: 3.5px;
+    outline-color: black;
+}
+
+.cards .card img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.cards .card .material h3{
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.cards .card .material ul{
+    list-style-type: disc;
+    padding: 10px;
+}
+
+.cards .card .material ul li{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.cards .card .material ul li::marker{
+    font-size: 1.5rem;
+}
