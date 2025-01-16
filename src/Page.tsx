@@ -14,6 +14,7 @@ function Page() {
         <Navbar />
         <About />
         <Experience />
+        <Skills />
         <Routes>
           {/* <Route path="/About" element={<About />}></Route>
           <Route path="/Experience" element={<Experience />}></Route>

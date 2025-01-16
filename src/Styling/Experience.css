@@ -5,11 +5,11 @@
     align-items: center;
     height: auto;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .experienceContainer .title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 15px;
     justify-content: center;
@@ -18,8 +18,9 @@
 
 .cards{
     display: grid;
+    /* width: 70%; */
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 10px;
     padding: 10px;
 }
 
@@ -42,28 +43,38 @@
 }
 
 .cards .card img{
-    width: 200px;
+    width: 150px;
     height: auto;
     object-fit: cover;
     padding: 20px;
 }
 
+.cards .card .material{
+    padding: 10px;
+}
+
 .cards .card .material h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     padding: 10px;
 }
 
 .cards .card .material ul{
     list-style-type: disc;
-    padding: 10px;
+    padding: 5px;
 }
 
 .cards .card .material ul li{
-    font-size: 1.3rem;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
 }
 
 .cards .card .material ul li::marker{
     font-size: 1.5rem;
+}
+
+@media(max-width: 1280px){
+    .cards{
+        width: 85%;
+    }
 }
