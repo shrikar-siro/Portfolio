@@ -17,8 +17,8 @@
 }
 
 .cards{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     padding: 10px;
 }
@@ -36,8 +36,9 @@
     padding: 10px;
     outline: 2.5px solid #d3d3d3;
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     margin: 0.5em;
+    overflow: scroll;
 }
 
 /* border animation */
@@ -78,8 +79,8 @@
     font-size: 1.5rem;
 }
 
-@media(max-width: 1280px){
+/* @media(max-width: 1280px){
     .cards{
         width: 85%;
     }
-}
+} */
