@@ -23,23 +23,21 @@
     padding: 10px;
 }
 
-.cards{
-    flex: 0;
-    max-width: 60%;
-}
+
 
 .cards .card{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    padding: 30px;
     outline: 2.5px solid #d3d3d3;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
     margin: 0.5em;
     overflow: scroll;
 }
+
+
 
 /* border animation */
 .cards .card:hover{
@@ -48,30 +46,46 @@
 }
 
 .cards .card img{
-    width: 150px;
+
+    width: 70px;
     height: auto;
     object-fit: cover;
-    padding: 20px;
 }
 
-.cards .card .material{
+
+.cards .card .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
     padding: 10px;
 }
-
-.cards .card .material h3{
-    font-size: 1.5rem;
+.cards .card .header p{
+    padding-top: 0px;
+    margin-left: 10px;
+    
+}
+.cards .card .header h3{
+    font-size: 2rem;
     font-weight: normal;
     padding: 10px;
 }
 
+.cards .card .material{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
 .cards .card .material ul{
     margin: 0;
     list-style-type: disc;
-    padding-left: 5px;
+    padding-left: 50px;
 }
 
 .cards .card .material ul li{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 5px;
 }
 
@@ -79,8 +93,3 @@
     font-size: 1.5rem;
 }
 
-/* @media(max-width: 1280px){
-    .cards{
-        width: 85%;
-    }
-} */

@@ -11,7 +11,7 @@ function Projects() {
         <div className="projectGrid">
           <div className="card">
             <img src="/assets/LaLigaLogo.png"></img>
-            <div className="material">
+            <div className="card-content">
               <h2>LaLiga Insights</h2>
               <p className="description">
                 A web application tracking player statistics in LaLiga for the
@@ -22,11 +22,10 @@ function Projects() {
                 <b>Skills Used: {""}</b>
               </p>
             </div>
-            <button className="gitHubLink">View Here.</button>
           </div>
           <div className="card">
             <img src="/assets/lung.png"></img>
-            <div className="material">
+            <div className="card-content">
               <h2>Lung Cancer Classifier</h2>
               <p>
                 A Web Application using YOLOv8 to detect the proportion of lung
@@ -37,11 +36,10 @@ function Projects() {
                 <b>Skills Used: {""}</b>
               </p>
             </div>
-            <button className="gitHubLink">View Here.</button>
           </div>
           <div className="card">
             <img src="/assets/EggsByTheDozen.jpeg"></img>
-            <div className="material">
+            <div className="card-content">
               <h2>Eggs By The Dozen</h2>
               <p>
                 Led a team of 5 in developing a a web application to count
@@ -53,7 +51,6 @@ function Projects() {
                 <b>Skills Used: {""}</b>
               </p>
             </div>
-            <button className="gitHubLink">View Here.</button>
           </div>
         </div>
       </div>

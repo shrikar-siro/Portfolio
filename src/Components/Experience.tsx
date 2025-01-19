@@ -8,9 +8,16 @@ function Experience() {
         {/* we want to have a card-like system - each experience fits on cards - to do that we might want a card group inside our container. */}
         <div className="cards">
           <div className="card">
-            <img src="/assets/dsLogo.png"></img>
+            <div className="header">
+              <img src="/assets/images.png"></img>
+              <p>
+                <h3>Undergraduate Research Assistant</h3>
+                <p>
+                  <i>January 2025 - Present</i>
+                </p>
+              </p>
+            </div>
             <div className="material">
-              <h3>Undergraduate Research Assistant</h3>
               <ul className="expList">
                 <li>
                   Develop a visual analytics platform utilizing React, Node.js
@@ -24,9 +31,16 @@ function Experience() {
             </div>
           </div>
           <div className="card">
-            <img src="/assets/ML@UVALogo.png"></img>
+            <div className="header">
+              <img src="/assets/ML@UVALogo.png"></img>
+              <p>
+                <h3>Software Developer</h3>
+                <p>
+                  <i>August 2024 - Present</i>
+                </p>
+              </p>
+            </div>
             <div className="material">
-              <h3>Software Developer</h3>
               <ul className="expList">
                 <li>
                   Achieved a 10% reduction in page load time, as measured by
@@ -44,9 +58,16 @@ function Experience() {
             </div>
           </div>
           <div className="card">
-            <img src="/assets/rotundaLogo.png"></img>
+            <div className="header">
+              <img src="/assets/rotundaLogo.png"></img>
+              <p>
+                <h3>Undergraduate Tutor</h3>
+                <p>
+                  <i>August 2024 - Present</i>
+                </p>
+              </p>
+            </div>
             <div className="material">
-              <h3>Undergraduate Tutor</h3>
               <ul className="expList">
                 <li>
                   Improving students’ understanding of core topics such as C,

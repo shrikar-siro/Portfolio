@@ -18,7 +18,7 @@
 
 .aboutContainer .description{
     font-size: 1.5rem;
-    width: 50%;
+    max-width: 30%;
     text-align: center;
 }
 

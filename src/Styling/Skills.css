@@ -20,11 +20,9 @@
 
 .skillsContainer .skillGrid{
     display: grid;
-    max-width: 60%;
-    grid-template-columns: 
-    repeat(auto-fill, minmax(220px, 2fr));
-    gap: 35px;
-    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    padding: 25px;
     justify-content: center;
 }
 
@@ -33,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 75px;
+    padding: 90px;
     outline: 2.5px solid #d3d3d3;
     border-radius: 10px;
     text-align: center;
@@ -47,7 +45,7 @@
 
 
 .skillsContainer .skillGrid .card img{
-    width: 90px;
+    width: 120px;
     height: auto;
 }
 
@@ -56,30 +54,38 @@
     font-weight: bold;
 }
 
-/* @media(max-width: 1700px){
-    .skillsContainer .skillGrid{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
+@media(max-width: 1100px){
     .skillsContainer .skillGrid .card{
         padding: 60px;
+        gap: 35px;
     }
 }
-@media(max-width: 1640px){
-    .skillsContainer .skillGrid{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
-    }
-    .skillsContainer .skillGrid .card{
-        padding: 55px;
-    }
-}
-@media(max-width: 1600px){
+@media(max-width: 980px){
     .skillsContainer .skillGrid{
         grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
+        column-gap: 75px;
     }
     .skillsContainer .skillGrid .card{
         padding: 75px;
+        gap: 25px;
     }
-} */
+}
+@media(max-width: 890px){
+    .skillsContainer .skillGrid{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 55px;
+    }
+    .skillsContainer .skillGrid .card{
+        padding: 55px;
+        gap: 15px;
+    }
+}
+@media(max-width: 750px){
+    .skillsContainer .skillGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skillsContainer .skillGrid .card{
+        padding: 110px;
+        gap: 25px;
+    }
+}
